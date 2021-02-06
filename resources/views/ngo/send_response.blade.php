@@ -1,0 +1,52 @@
+@extends('ngo.master')
+@section('content')
+
+	<!-- Page Headings Start -->
+            <div class="row justify-content-between align-items-center mb-10">
+
+                <!-- Page Heading Start -->
+                <div class="col-12 col-lg-auto mb-20">
+                    <div class="page-heading">
+                        <h3>Recieve Response <span>/ By NGO's </span></h3>
+                    </div>
+                </div><!-- Page Heading End -->
+
+            </div><!-- Page Headings End -->
+
+            <div class="row">
+
+                <!--Order List Start-->
+                <div class="col-12">
+                    <div class="table-responsive">
+                        <table class="table table-vertical-middle">
+                            <thead>
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th>Date/Time</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#556</td>
+                                    <td>11 March 2019</td>
+                                    <td class="action h4">
+                                        <div class="table-action-buttons">
+                                            <a class="view button button-box button-xs button-primary" href="{{url('ViewBillOfNgo')}}"><i class="zmdi zmdi-more"></i></a>
+                                            
+                                            <a class="delete button button-box button-xs button-danger" href="#"><i class="zmdi zmdi-delete"></i></a>
+                                            <a class="delete button button-box button-xs button-success" href="#"><i class="fa fa-check" aria-hidden="true"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                               
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!--Order List End-->
+
+            </div>
+
+@stop
